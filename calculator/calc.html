@@ -1,0 +1,103 @@
+ <!DOCTYPE HTML>
+<head>
+    <style>
+        #topic
+        {
+            font-weight:800px;
+            font-family:sans-serif;
+            font-size: 40px;
+            font-style: oblique;
+            text-align: center;
+            padding:10px 10px 20px 10px;
+            background-color: rgb(16, 233, 168);
+        }
+        #calc
+        {
+            padding:10px 10px 0px 10px;
+            text-align: center;
+            margin-top: 1%;
+            margin-left: 5%;
+    
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post" enctype="text/plain"  oninput="getin()">
+        <div class="topic" id="topic"> Calculator</div>
+        <a href="try.html">home</a>
+        <div class="calc" id="calc">
+            <label> Integer 1 </label>
+            <input type="number" name="none" id="none" required>
+        </div>
+        <div class="calc" id="calc">
+            <label> Integer 2 </label>
+            <input type="number" name="ntwo" id="ntwo" required>
+        </div>
+        <div class="calc" id="calc">
+            <label> Addition </label>
+            <input type="number" name="nadd" id="nadd" readonly>
+        </div>
+        <div class="calc" id="calc">
+            <label> Subtraction </label>
+            <input type="text" name="nsub" id="nsub" readonly>
+        </div>
+        <div class="calc" id="calc">
+            <label> Multiplication </label>
+            <input type="text" name="nmul" id="nmul" readonly>
+        </div>
+        <div class="calc" id="calc">
+            <label> Division </label>
+            <input type="text" name="ndiv" id="ndiv" readonly>
+        </div>
+        <div class="calc" id="calc">
+            <label> Modulus </label>
+            <input type="text" name="nmod" id="nmod" readonly>
+        </div>
+        <div class="calc" id="calc">
+            <label> Square of F.no </label>
+            <input type="text" name="nsqu" id="nsqu" readonly>
+        </div>
+        <div class="calc" id="calc">
+            <label> square root of S.no </label>
+            <input type="text" name="nsqua" id="nsqua" readonly>
+        </div>
+        <div class="calc" id="calc">
+            <label> square root of f.no </label>
+            <input type="text" name="root" id="root" readonly>
+        </div>
+        <div class="calc" id="calc">
+            <label> square root of S.no </label>
+            <input type="text" name="roota" id="roota" readonly>
+        </div>
+
+        
+</body>
+<script>
+    function getin() 
+        {
+            var a = parseInt(document.getElementById("none").value);
+            var b = parseInt(document.getElementById("ntwo").value); 
+            var nadd = a+b;
+            var nsub = a-b;
+            var nmul = a*b;
+            var ndiv = a/b;
+            var nmod = a%b;
+            var nsqu = a*a;
+            var nsqua = b*b;
+            var root = Math.sqrt(a);
+            var roota = Math.sqrt(b);
+          document.getElementById('nadd').value= nadd;
+            document.getElementById('nsub').value= nsub;
+            document.getElementById('nmul').value= nmul;
+            document.getElementById('ndiv').value= ndiv;
+            document.getElementById('nmod').value= nmod;
+            document.getElementById('nsqu').value= nsqu;
+            document.getElementById('nsqua').value= nsqua;
+            document.getElementById('root').value= root;
+            document.getElementById('roota').value= roota;
+
+
+        }
+    </script>
+</script>
+</html>
